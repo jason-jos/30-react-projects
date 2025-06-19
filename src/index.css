@@ -1,1 +1,7 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@layer components{
+    .e-input{
+        @apply text-center border-b border-dotted outline-0
+    }
+}
