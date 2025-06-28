@@ -4,4 +4,231 @@
     .e-input{
         @apply text-center border-b border-dotted outline-0
     }
+     @page {
+            size: A4;
+            margin: 0.5in;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f8ff;
+        }
+        
+        .header {
+            background: white;
+            border: 3px solid black;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .header .set-text {
+            color: red;
+        }
+        
+        .decorative-border {
+            background: repeating-linear-gradient(
+                45deg,
+                black,
+                black 10px,
+                yellow 10px,
+                yellow 20px
+            );
+            height: 15px;
+            margin: 10px 0;
+        }
+        
+        .star-badge {
+            position: absolute;
+            background: #FFD700;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 14px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            color: black;
+        }
+        
+        .star-left {
+            left: 20px;
+            top: 80px;
+        }
+        
+        .star-right {
+            right: 20px;
+            top: 80px;
+        }
+        
+        .worksheets-container {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        
+        .worksheet {
+            flex: 1;
+            background: white;
+            border: 2px solid black;
+            padding: 15px;
+            box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+        }
+        
+        .worksheet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+        
+        .word-display {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        
+        .name-field {
+            margin-left: auto;
+            font-weight: bold;
+        }
+        
+        .name-line {
+            border-bottom: 1px solid black;
+            width: 120px;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        
+        .activity-section {
+            margin: 15px 0;
+            padding: 10px 0;
+        }
+        
+        .activity-label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .trace-area {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #fafafa;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #ccc;
+            text-align: center;
+        }
+        
+        .write-lines {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            height: 40px;
+            margin: 5px 0;
+            background: linear-gradient(to bottom, transparent 39px, #ddd 39px, #ddd 41px, transparent 41px);
+        }
+        
+        .color-section {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .color-word {
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            background: white;
+        }
+        
+        .find-section {
+            margin: 15px 0;
+        }
+        
+        .word-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2px;
+            margin: 10px 0;
+            border: 1px solid black;
+        }
+        
+        .word-cell {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+            background: white;
+        }
+        
+        .word-cell.target {
+            background: #ffffcc;
+            font-weight: bold;
+        }
+        
+        .match-section {
+            margin: 20px 0;
+        }
+        
+        .letter-boxes {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        
+        .letter-box {
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            background: #f0f0f0;
+        }
+        
+        .cut-section {
+            border: 2px dashed #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        
+        .cut-images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+        .cut-image {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        /* Template variables that can be replaced */
+        .word-template {
+            color: #0066cc;
+            font-weight: bold;
+        }
 }
+
+
